@@ -1,0 +1,54 @@
+Aug 10, 2016 2:05:41 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:05:45 PM org.openide.util.Exceptions printStackTrace
+SEVERE: null
+com.microchip.mplab.mdbcore.debugger.DebugException: Could not connect to tool hardware: PICkit3PlatformTool, com.microchip.mplab.mdbcore.PICKit3Tool.PICkit3DbgToolManager
+	at com.microchip.mplab.mdbcore.debugger.MCDebugger.Connect(MCDebugger.java:146)
+	at com.microchip.mplab.ipelib.device.ToolsLookup.Connect(ToolsLookup.java:926)
+	at com.microchip.mplab.ipelib.IPELibrary.ConnectTarget(IPELibrary.java:641)
+	at com.microchip.mplab.ipecmd.commandline.CmdApp.runApplication(CmdApp.java:2774)
+	at com.microchip.mplab.ipecmd.IPECMD.main(IPECMD.java:249)
+
+Aug 10, 2016 2:06:05 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:08:27 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:09:49 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:10:19 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:15:48 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:16:08 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:16:30 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:33:59 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:40:26 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:46:39 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:48:37 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:50:21 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:52:11 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+
+Aug 10, 2016 2:52:32 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFO: 
+

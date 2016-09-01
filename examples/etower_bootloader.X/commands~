@@ -1,0 +1,41 @@
+status
+
+bootloader read 0x200
+bootloader find_chunk_end 0x4200
+bootloader read_chunk 0x10000
+
+bootloader read 0x2000
+bootloader write 0x2000 0x123456
+
+bootloader read 0x2002
+bootloader read 0x2004
+bootloader read 0x2006
+read
+
+bootloader read 0x202
+
+bootloader write 0x0157f7 0xffffff
+bootloader read 0x0157f7
+
+bootloader read 0x4000
+bootloader erase 0x4000
+bootloader write 0x4000 0x000000
+bootloader write 0x4000 0xffffff
+
+bootloader read 0x41ff
+bootloader erase 0x41ff
+bootloader write 0x41ff 0x000000
+bootloader write 0x41ff 0xffffff
+
+bootloader erase 0x157f7
+bootloader read 0x157f9
+bootloader write 0x4000 0x000000
+
+
+bootloader read 0x1e2a
+bootloader erase 0x3999
+bootloader write 0x3999 0x000000
+bootloader write 0x3999 0xffffff
+
+
+

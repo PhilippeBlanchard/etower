@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration device="PIC24FJ128GB202" mcc_version="v2.10">
+    <managers>
+        <manager generated="true" name="Pin Manager" reloadPin="manual">
+            <setting name="package" option="DIP28"/>
+            <setting name="sorting" option="true"/>
+            <resource customName="" digital="true" direction="OUTPUT" function="SCK1OUT" ioc="0" module="SPI1" name="RB11" start="false" type="pin" wpu="false"/>
+            <resource customName="" digital="true" direction="INPUT" function="SDI1" ioc="0" module="SPI1" name="RB13" start="false" type="pin" wpu="false"/>
+            <resource customName="" digital="true" direction="OUTPUT" function="SDO1" ioc="0" module="SPI1" name="RB14" start="false" type="pin" wpu="false"/>
+            <resource customName="" digital="true" direction="OUTPUT" function="SS1OUT" ioc="0" module="SPI1" name="RB15" start="false" type="pin" wpu="false"/>
+            <file checksum="1774365698" modified="false" name="pin_manager.c" path="mcc_generated_files/pin_manager.c"/>
+            <file checksum="4147483658" modified="false" name="pin_manager.h" path="mcc_generated_files/pin_manager.h"/>
+        </manager>
+        <manager generated="true" name="System" reloadPin="manual">
+            <initializer comment="" name="Initialize">
+                <setting name="DOZE" option="1:8" register="CLKDIV"/>
+                <setting name="DOZEN" option="disabled" register="CLKDIV"/>
+                <setting name="RCDIV" option="FRC/1" register="CLKDIV"/>
+                <setting name="CPDIV" option="1:8" register="CLKDIV"/>
+                <setting name="PLLEN" option="enabled" register="CLKDIV"/>
+                <setting name="ROI" option="disabled" register="CLKDIV"/>
+                <setting name="STSRC" option="SOSC" register="OSCTUN"/>
+                <setting name="STEN" option="disabled" register="OSCTUN"/>
+                <setting name="STORPOL" option="Interrupt when STOR is 1" register="OSCTUN"/>
+                <setting name="STOR" option="disabled" register="OSCTUN"/>
+                <setting name="STLOCK" option="disabled" register="OSCTUN"/>
+                <setting name="STLPOL" option="Interrupt when STLOCK is 1" register="OSCTUN"/>
+                <setting name="TUN" option="Center frequency" register="OSCTUN"/>
+                <setting name="STSIDL" option="disabled" register="OSCTUN"/>
+            </initializer>
+            <setting name="IOL1WAY" option="ON"/>
+            <setting name="PLLDIV" option="PLL4X"/>
+            <setting name="I2C1SEL" option="ENABLE"/>
+            <setting name="DSWDTPS" option="DSWDTPS1F"/>
+            <setting name="DSSWEN" option="ON"/>
+            <setting name="DSWDTOSC" option="LPRC"/>
+            <setting name="DSBOREN" option="ON"/>
+            <setting name="DSWDTEN" option="ON"/>
+            <setting name="WPDIS" option="WPDIS"/>
+            <setting name="WPFP" option="WPFP0"/>
+            <setting name="WPEND" option="WPENDMEM"/>
+            <setting name="BOREN" option="OFF"/>
+            <setting name="WPCFG" option="WPCFGDIS"/>
+            <setting name="SOSCSEL" option="ON"/>
+            <setting name="WDTWIN" option="PS25_0"/>
+            <setting name="PLLSS" option="PLL_FRC"/>
+            <setting name="POSCMD" option="NONE"/>
+            <setting name="IESO" option="OFF"/>
+            <setting name="FNOSC" option="FRCPLL"/>
+            <setting name="WDTCLK" option="LPRC"/>
+            <setting name="WDTCMX" option="WDTCLK"/>
+            <setting name="ALTCMPI" option="CxINC_RB"/>
+            <setting name="FCKSM" option="CSDCMD"/>
+            <setting name="ALTRB6" option="APPEND"/>
+            <setting name="OSCIOFCN" option="ON"/>
+            <setting name="WDTPS" option="PS32768"/>
+            <setting name="LPCFG" option="ON"/>
+            <setting name="ICS" option="PGx3"/>
+            <setting name="FWPSA" option="PR128"/>
+            <setting name="WINDIS" option="OFF"/>
+            <setting name="GWRP" option="OFF"/>
+            <setting name="GCP" option="OFF"/>
+            <setting name="FWDTEN" option="ON"/>
+            <setting name="JTAGEN" option="ON"/>
+            <setting name="Primary Oscillator" option="8000000"/>
+            <setting name="Secondary Oscillator" option="31000"/>
+            <setting name="generateConfigBits" option="true"/>
+            <file checksum="3598199672" modified="false" name="mcc.c" path="mcc_generated_files/mcc.c"/>
+            <file checksum="565315924" modified="false" name="mcc.h" path="mcc_generated_files/mcc.h"/>
+        </manager>
+    </managers>
+    <modules>
+        <module generated="true" mode="Master" name="SPI1" order="0" reloadPin="auto" type="spi_i2s_upb">
+            <initializer comment="" name="Initialize">
+                <setting name="TXELM" option="0" register="SPI1STATH"/>
+                <setting name="RXELM" option="0" register="SPI1STATH"/>
+                <setting name="TXELM" option="0" register="SPI1STATH"/>
+                <setting name="RXELM" option="0" register="SPI1STATH"/>
+                <setting name="WLENGTH" option="0" register="SPI1CON2L"/>
+                <setting name="AUDEN" option="disabled" register="SPI1CON1H"/>
+                <setting name="FRMPOL" option="disabled" register="SPI1CON1H"/>
+                <setting name="AUDMOD" option="I2S" register="SPI1CON1H"/>
+                <setting name="FRMCNT" option="0x0" register="SPI1CON1H"/>
+                <setting name="SPISGNEXT" option="not sign-extended" register="SPI1CON1H"/>
+                <setting name="IGNROV" option="disabled" register="SPI1CON1H"/>
+                <setting name="MSSEN" option="disabled" register="SPI1CON1H"/>
+                <setting name="AUDMONO" option="stereo" register="SPI1CON1H"/>
+                <setting name="FRMSYPW" option="One clock wide" register="SPI1CON1H"/>
+                <setting name="URDTEN" option="disabled" register="SPI1CON1H"/>
+                <setting name="IGNTUR" option="disabled" register="SPI1CON1H"/>
+                <setting name="FRMSYNC" option="disabled" register="SPI1CON1H"/>
+                <setting name="FRMEN" option="disabled" register="SPI1CON1H"/>
+                <setting name="SSEN" option="disabled" register="SPI1CON1L"/>
+                <setting name="DISSDI" option="disabled" register="SPI1CON1L"/>
+                <setting name="DISSCK" option="disabled" register="SPI1CON1L"/>
+                <setting name="MODE16" option="disabled" register="SPI1CON1L"/>
+                <setting name="CKE" option="Idle to Active" register="SPI1CON1L"/>
+                <setting name="MODE32" option="disabled" register="SPI1CON1L"/>
+                <setting name="SPISIDL" option="disabled" register="SPI1CON1L"/>
+                <setting name="SPIFE" option="Frame Sync pulse precedes" register="SPI1CON1L"/>
+                <setting name="SMP" option="Sample at Middle" register="SPI1CON1L"/>
+                <setting name="MSTEN" option="enabled" register="SPI1CON1L"/>
+                <setting name="SPIEN" option="enabled" register="SPI1CON1L"/>
+                <setting name="ENHBUF" option="disabled" register="SPI1CON1L"/>
+                <setting name="DISSDO" option="disabled" register="SPI1CON1L"/>
+                <setting name="MCLKEN" option="FOSC/2" register="SPI1CON1L"/>
+                <setting name="CKP" option="Idle:Low, Active:High" register="SPI1CON1L"/>
+                <setting name="SPI1BRGL" option="1" register="SPI1BRGL"/>
+                <additionalSetting name="baudValueChanged" option="0x1"/>
+            </initializer>
+            <setting name="SPII" option="false"/>
+            <setting name="SPFI" option="false"/>
+            <file checksum="3698020930" modified="false" name="spi1.c" path="mcc_generated_files/spi1.c"/>
+            <file checksum="1752178486" modified="false" name="spi1.h" path="mcc_generated_files/spi1.h"/>
+        </module>
+    </modules>
+</configuration>
